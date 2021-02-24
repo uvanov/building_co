@@ -5,10 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Title</title>
 </head>
@@ -23,6 +20,27 @@
                     LOGO
                 </a>
 
+                <ul class="header__navbar--desktop t-1">
+                    <li>
+                        <a class="js-projects" href="#">Крупнейшие проекты</a>
+                    </li>
+                    <li>
+                        <a class="js-services" href="#">Чем мы занимаемся</a>
+                    </li>
+                    <li>
+                        <a class="js-faq" href="#">Ответы на вопросы</a>
+                    </li>
+                    <li>
+                        <a class="js-partners" href="#">Партнёры</a>
+                    </li>
+                    <li>
+                        <a class="js-reviews" href="#">Отзывы</a>
+                    </li>
+                    <li>
+                        <a class="js-contacts" href="#">Контакты</a>
+                    </li>
+                </ul>
+
                 <button class="burger-btn">
                     <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -30,19 +48,46 @@
                             fill="white" />
                     </svg>
                 </button>
+
+
             </div>
+
+            <nav class="header__navbar--mobile t-1">
+                <ul>
+                    <li>
+                        <a class="js-projects" href="#">Крупнейшие проекты</a>
+                    </li>
+                    <li>
+                        <a class="js-services" href="#">Чем мы занимаемся</a>
+                    </li>
+                    <li>
+                        <a class="js-faq" href="#">Ответы на вопросы</a>
+                    </li>
+                    <li>
+                        <a class="js-partners" href="#">Партнёры</a>
+                    </li>
+                    <li>
+                        <a class="js-reviews" href="#">Отзывы</a>
+                    </li>
+                    <li>
+                        <a class="js-contacts" href="#">Контакты</a>
+                    </li>
+                </ul>
+
+                <div class="navbar__close"></div>
+            </nav>
         </header>
 
         <div class="welcome">
             <div class="container">
                 <div class="welcome__overlay"></div>
 
-                <h1 class="welcome__title">
+                <h1 class="welcome__title" data-aos="fade-up">
                     РЕАЛИЗУЕМ КРУПНЕЙШИЕ
                     ПРОЕКТЫ В РОССИИ
                 </h1>
 
-                <span class="welcome__subtitle">
+                <span class="welcome__subtitle" data-aos="fade-right">
                     стадионы, газопроводы, мосты, дамбы
                 </span>
             </div>
@@ -75,7 +120,7 @@
                 <div class="section-title projects-title">НАШИ САМЫЕ БОЛЬШИЕ ПРОЕКТЫ</div>
 
                 <div class="projects__grid">
-                    <div class="projects__item" style="background-image: url('assets/img/project.jpg')">
+                    <div class="projects__item" style="background-image: url('assets/img/project.jpg')" data-aos="fade-up" data-aos-duration="500">
                         <div class="projects__overlay">
                             <h2 class="projects__name">Газпром Арена</h2>
                             <p class="projects__description">
@@ -86,7 +131,7 @@
                         </div>
                     </div>
 
-                    <div class="projects__item" style="background-image: url('assets/img/project.jpg')">
+                    <div class="projects__item" style="background-image: url('assets/img/project.jpg')" data-aos="fade-up" data-aos-duration="1000">
                         <div class="projects__overlay">
                             <h2 class="projects__name">Газпром Арена</h2>
                             <p class="projects__description">
@@ -97,7 +142,7 @@
                         </div>
                     </div>
 
-                    <div class="projects__item" style="background-image: url('assets/img/project.jpg')">
+                    <div class="projects__item" style="background-image: url('assets/img/project.jpg')" data-aos="fade-up" data-aos-duration="1500">
                         <div class="projects__overlay">
                             <h2 class="projects__name">Газпром Арена</h2>
                             <p class="projects__description">
@@ -134,10 +179,10 @@
 
         <div class="services t-1">
             <div class="container t-1">
-                <div class="section-title">ЧЕМ МЫ ЗАНИМАЕМСЯ?</div>
+                <div class="section-title" data-aos="fade-right">ЧЕМ МЫ ЗАНИМАЕМСЯ?</div>
 
                 <div class="services__grid t-1">
-                    <div class="services__item t-1">
+                    <div class="services__item t-1" data-aos="fade-right">
                         <svg width="60" height="48" viewBox="0 0 60 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M22.875 36H19.125C18.4688 36 18 36.5625 18 37.125V40.875C18 41.5312 18.4688 42 19.125 42H22.875C23.4375 42 24 41.5312 24 40.875V37.125C24 36.5625 23.4375 36 22.875 36ZM22.875 18H19.125C18.4688 18 18 18.5625 18 19.125V22.875C18 23.5312 18.4688 24 19.125 24H22.875C23.4375 24 24 23.5312 24 22.875V19.125C24 18.5625 23.4375 18 22.875 18ZM13.875 18H10.125C9.46875 18 9 18.5625 9 19.125V22.875C9 23.5312 9.46875 24 10.125 24H13.875C14.4375 24 15 23.5312 15 22.875V19.125C15 18.5625 14.4375 18 13.875 18ZM13.875 36H10.125C9.46875 36 9 36.5625 9 37.125V40.875C9 41.5312 9.46875 42 10.125 42H13.875C14.4375 42 15 41.5312 15 40.875V37.125C15 36.5625 14.4375 36 13.875 36ZM13.875 27H10.125C9.46875 27 9 27.5625 9 28.125V31.875C9 32.5312 9.46875 33 10.125 33H13.875C14.4375 33 15 32.5312 15 31.875V28.125C15 27.5625 14.4375 27 13.875 27ZM22.875 27H19.125C18.4688 27 18 27.5625 18 28.125V31.875C18 32.5312 18.4688 33 19.125 33H22.875C23.4375 33 24 32.5312 24 31.875V28.125C24 27.5625 23.4375 27 22.875 27ZM49.875 36H46.125C45.4688 36 45 36.5625 45 37.125V40.875C45 41.5312 45.4688 42 46.125 42H49.875C50.4375 42 51 41.5312 51 40.875V37.125C51 36.5625 50.4375 36 49.875 36ZM49.875 27H46.125C45.4688 27 45 27.5625 45 28.125V31.875C45 32.5312 45.4688 33 46.125 33H49.875C50.4375 33 51 32.5312 51 31.875V28.125C51 27.5625 50.4375 27 49.875 27ZM57.75 18H48V2.25C48 1.03125 46.9688 0 45.75 0H26.25C24.9375 0 24 1.03125 24 2.25V9H21V1.5C21 0.75 20.25 0 19.5 0H18C17.1562 0 16.5 0.75 16.5 1.5V9H10.5V1.5C10.5 0.75 9.75 0 9 0H7.5C6.65625 0 6 0.75 6 1.5V9H2.25C0.9375 9 0 10.0312 0 11.25V46.5C0 47.3438 0.65625 48 1.5 48H3C3.75 48 4.5 47.3438 4.5 46.5V13.5H28.5V4.5H43.5V22.5H55.5V46.5C55.5 47.3438 56.1562 48 57 48H58.5C59.25 48 60 47.3438 60 46.5V20.25C60 19.0312 58.9688 18 57.75 18ZM37.875 9H34.125C33.4688 9 33 9.5625 33 10.125V13.875C33 14.5312 33.4688 15 34.125 15H37.875C38.4375 15 39 14.5312 39 13.875V10.125C39 9.5625 38.4375 9 37.875 9ZM37.875 27H34.125C33.4688 27 33 27.5625 33 28.125V31.875C33 32.5312 33.4688 33 34.125 33H37.875C38.4375 33 39 32.5312 39 31.875V28.125C39 27.5625 38.4375 27 37.875 27ZM37.875 18H34.125C33.4688 18 33 18.5625 33 19.125V22.875C33 23.5312 33.4688 24 34.125 24H37.875C38.4375 24 39 23.5312 39 22.875V19.125C39 18.5625 38.4375 18 37.875 18Z"
@@ -150,7 +195,7 @@
                         </h2>
                     </div>
 
-                    <div class="services__item">
+                    <div class="services__item" data-aos="fade-up">
                         <svg width="60" height="48" viewBox="0 0 60 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M22.875 36H19.125C18.4688 36 18 36.5625 18 37.125V40.875C18 41.5312 18.4688 42 19.125 42H22.875C23.4375 42 24 41.5312 24 40.875V37.125C24 36.5625 23.4375 36 22.875 36ZM22.875 18H19.125C18.4688 18 18 18.5625 18 19.125V22.875C18 23.5312 18.4688 24 19.125 24H22.875C23.4375 24 24 23.5312 24 22.875V19.125C24 18.5625 23.4375 18 22.875 18ZM13.875 18H10.125C9.46875 18 9 18.5625 9 19.125V22.875C9 23.5312 9.46875 24 10.125 24H13.875C14.4375 24 15 23.5312 15 22.875V19.125C15 18.5625 14.4375 18 13.875 18ZM13.875 36H10.125C9.46875 36 9 36.5625 9 37.125V40.875C9 41.5312 9.46875 42 10.125 42H13.875C14.4375 42 15 41.5312 15 40.875V37.125C15 36.5625 14.4375 36 13.875 36ZM13.875 27H10.125C9.46875 27 9 27.5625 9 28.125V31.875C9 32.5312 9.46875 33 10.125 33H13.875C14.4375 33 15 32.5312 15 31.875V28.125C15 27.5625 14.4375 27 13.875 27ZM22.875 27H19.125C18.4688 27 18 27.5625 18 28.125V31.875C18 32.5312 18.4688 33 19.125 33H22.875C23.4375 33 24 32.5312 24 31.875V28.125C24 27.5625 23.4375 27 22.875 27ZM49.875 36H46.125C45.4688 36 45 36.5625 45 37.125V40.875C45 41.5312 45.4688 42 46.125 42H49.875C50.4375 42 51 41.5312 51 40.875V37.125C51 36.5625 50.4375 36 49.875 36ZM49.875 27H46.125C45.4688 27 45 27.5625 45 28.125V31.875C45 32.5312 45.4688 33 46.125 33H49.875C50.4375 33 51 32.5312 51 31.875V28.125C51 27.5625 50.4375 27 49.875 27ZM57.75 18H48V2.25C48 1.03125 46.9688 0 45.75 0H26.25C24.9375 0 24 1.03125 24 2.25V9H21V1.5C21 0.75 20.25 0 19.5 0H18C17.1562 0 16.5 0.75 16.5 1.5V9H10.5V1.5C10.5 0.75 9.75 0 9 0H7.5C6.65625 0 6 0.75 6 1.5V9H2.25C0.9375 9 0 10.0312 0 11.25V46.5C0 47.3438 0.65625 48 1.5 48H3C3.75 48 4.5 47.3438 4.5 46.5V13.5H28.5V4.5H43.5V22.5H55.5V46.5C55.5 47.3438 56.1562 48 57 48H58.5C59.25 48 60 47.3438 60 46.5V20.25C60 19.0312 58.9688 18 57.75 18ZM37.875 9H34.125C33.4688 9 33 9.5625 33 10.125V13.875C33 14.5312 33.4688 15 34.125 15H37.875C38.4375 15 39 14.5312 39 13.875V10.125C39 9.5625 38.4375 9 37.875 9ZM37.875 27H34.125C33.4688 27 33 27.5625 33 28.125V31.875C33 32.5312 33.4688 33 34.125 33H37.875C38.4375 33 39 32.5312 39 31.875V28.125C39 27.5625 38.4375 27 37.875 27ZM37.875 18H34.125C33.4688 18 33 18.5625 33 19.125V22.875C33 23.5312 33.4688 24 34.125 24H37.875C38.4375 24 39 23.5312 39 22.875V19.125C39 18.5625 38.4375 18 37.875 18Z"
@@ -163,7 +208,7 @@
                         </h2>
                     </div>
 
-                    <div class="services__item">
+                    <div class="services__item" data-aos="fade-left">
                         <svg width="60" height="48" viewBox="0 0 60 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M22.875 36H19.125C18.4688 36 18 36.5625 18 37.125V40.875C18 41.5312 18.4688 42 19.125 42H22.875C23.4375 42 24 41.5312 24 40.875V37.125C24 36.5625 23.4375 36 22.875 36ZM22.875 18H19.125C18.4688 18 18 18.5625 18 19.125V22.875C18 23.5312 18.4688 24 19.125 24H22.875C23.4375 24 24 23.5312 24 22.875V19.125C24 18.5625 23.4375 18 22.875 18ZM13.875 18H10.125C9.46875 18 9 18.5625 9 19.125V22.875C9 23.5312 9.46875 24 10.125 24H13.875C14.4375 24 15 23.5312 15 22.875V19.125C15 18.5625 14.4375 18 13.875 18ZM13.875 36H10.125C9.46875 36 9 36.5625 9 37.125V40.875C9 41.5312 9.46875 42 10.125 42H13.875C14.4375 42 15 41.5312 15 40.875V37.125C15 36.5625 14.4375 36 13.875 36ZM13.875 27H10.125C9.46875 27 9 27.5625 9 28.125V31.875C9 32.5312 9.46875 33 10.125 33H13.875C14.4375 33 15 32.5312 15 31.875V28.125C15 27.5625 14.4375 27 13.875 27ZM22.875 27H19.125C18.4688 27 18 27.5625 18 28.125V31.875C18 32.5312 18.4688 33 19.125 33H22.875C23.4375 33 24 32.5312 24 31.875V28.125C24 27.5625 23.4375 27 22.875 27ZM49.875 36H46.125C45.4688 36 45 36.5625 45 37.125V40.875C45 41.5312 45.4688 42 46.125 42H49.875C50.4375 42 51 41.5312 51 40.875V37.125C51 36.5625 50.4375 36 49.875 36ZM49.875 27H46.125C45.4688 27 45 27.5625 45 28.125V31.875C45 32.5312 45.4688 33 46.125 33H49.875C50.4375 33 51 32.5312 51 31.875V28.125C51 27.5625 50.4375 27 49.875 27ZM57.75 18H48V2.25C48 1.03125 46.9688 0 45.75 0H26.25C24.9375 0 24 1.03125 24 2.25V9H21V1.5C21 0.75 20.25 0 19.5 0H18C17.1562 0 16.5 0.75 16.5 1.5V9H10.5V1.5C10.5 0.75 9.75 0 9 0H7.5C6.65625 0 6 0.75 6 1.5V9H2.25C0.9375 9 0 10.0312 0 11.25V46.5C0 47.3438 0.65625 48 1.5 48H3C3.75 48 4.5 47.3438 4.5 46.5V13.5H28.5V4.5H43.5V22.5H55.5V46.5C55.5 47.3438 56.1562 48 57 48H58.5C59.25 48 60 47.3438 60 46.5V20.25C60 19.0312 58.9688 18 57.75 18ZM37.875 9H34.125C33.4688 9 33 9.5625 33 10.125V13.875C33 14.5312 33.4688 15 34.125 15H37.875C38.4375 15 39 14.5312 39 13.875V10.125C39 9.5625 38.4375 9 37.875 9ZM37.875 27H34.125C33.4688 27 33 27.5625 33 28.125V31.875C33 32.5312 33.4688 33 34.125 33H37.875C38.4375 33 39 32.5312 39 31.875V28.125C39 27.5625 38.4375 27 37.875 27ZM37.875 18H34.125C33.4688 18 33 18.5625 33 19.125V22.875C33 23.5312 33.4688 24 34.125 24H37.875C38.4375 24 39 23.5312 39 22.875V19.125C39 18.5625 38.4375 18 37.875 18Z"
@@ -182,13 +227,13 @@
 
         <div class="portfolio">
             <div class="portfolio__grid">
-                <div style="background-image: url('/assets/img/portfolio_placeholder.jpg')" class="portfolio__image">
+                <div style="background-image: url('./assets/img/portfolio_placeholder.jpg')" class="portfolio__image">
                     ГАЛЛЕРЕЯ</div>
-                <div style="background-image: url('/assets/img/portfolio_placeholder.jpg')" class="portfolio__image">
+                <div style="background-image: url('./assets/img/portfolio_placeholder.jpg')" class="portfolio__image">
                     ГАЛЛЕРЕЯ</div>
-                <div style="background-image: url('/assets/img/portfolio_placeholder.jpg')" class="portfolio__image">
+                <div style="background-image: url('./assets/img/portfolio_placeholder.jpg')" class="portfolio__image">
                     ГАЛЛЕРЕЯ</div>
-                <div style="background-image: url('/assets/img/portfolio_placeholder.jpg')" class="portfolio__image">
+                <div style="background-image: url('./assets/img/portfolio_placeholder.jpg')" class="portfolio__image">
                     ГАЛЛЕРЕЯ</div>
             </div>
         </div>
@@ -233,23 +278,23 @@
             <div class="container">
                 <span class="section-title partners__title">наши партнеры</span>
                 <ul class="partners__list">
-                    <li class="partners__item">
+                    <li class="partners__item" data-aos="flip-right">
                         <img src="./assets/img/partner.png" alt="partners name" class="partners__image">
                     </li>
 
-                    <li class="partners__item">
+                    <li class="partners__item" data-aos="flip-right">
                         <img src="./assets/img/partner.png" alt="partners name" class="partners__image">
                     </li>
 
-                    <li class="partners__item">
+                    <li class="partners__item" data-aos="flip-right">
                         <img src="./assets/img/partner.png" alt="partners name" class="partners__image">
                     </li>
 
-                    <li class="partners__item">
+                    <li class="partners__item" data-aos="flip-right">
                         <img src="./assets/img/partner.png" alt="partners name" class="partners__image">
                     </li>
 
-                    <li class="partners__item">
+                    <li class="partners__item" data-aos="flip-right">
                         <img src="./assets/img/partner.png" alt="partners name" class="partners__image">
                     </li>
                 </ul>
@@ -258,10 +303,10 @@
 
         <div class="reviews">
             <div class="container">
-                <div class="section-title reviews-title">отзывы о работе с нами</div>
+                <div class="section-title reviews-title" data-aos="fade-left">отзывы о работе с нами</div>
 
                 <div class="reviews__list">
-                    <div class="reviews__item">
+                    <div class="reviews__item" data-aos="zoom-in">
                         <div class="reviews__quote">
                             <svg width="124" height="110" viewBox="0 0 124 110" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -286,7 +331,7 @@
                         </span>
                     </div>
 
-                    <div class="reviews__item">
+                    <div class="reviews__item" data-aos="zoom-in">
                         <div class="reviews__quote">
                             <svg width="124" height="110" viewBox="0 0 124 110" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -311,7 +356,7 @@
                         </span>
                     </div>
 
-                    <div class="reviews__item">
+                    <div class="reviews__item" data-aos="zoom-in">
                         <div class="reviews__quote">
                             <svg width="124" height="110" viewBox="0 0 124 110" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -448,6 +493,7 @@
 
 
     <script src="./assets/js/jquery.min.js"></script>
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
     <script src="./assets/js/style.js"></script>
     <script src="./assets/js/index.js"></script>
 </body>
